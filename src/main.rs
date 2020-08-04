@@ -1,10 +1,12 @@
+#![allow(dead_code)]
 // mod day0;
 // mod day1;
 // mod guessing_game;
 // mod day2; // functions and controll flow
 // mod fibonacci;
 // mod day3; // ownership
-mod day4_slices; // slices
+// mod day4_slices;
+mod day5_structs;
 
 fn main() {
     // day0::run();
@@ -13,5 +15,6 @@ fn main() {
     // day2::run();
     // fibonacci::run();
     // day3::run();
-    day4_slices::run();
+    // day4_slices::run();
+    day5_structs::run();
 }
