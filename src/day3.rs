@@ -45,4 +45,52 @@ pub fn run() {
   println!("{:?}, {:?}", copy_touple, c); // legal
   let c = non_copy_touple;
   // println!("{:?}, {:?}", non_copy_touple, c); // illegal
+
+  // functions can take ownership of a variable or make a copy;
+  let s1 = String::from("This is a string");
+  let x1 = 4;
+  takes_ownership(s1);
+  makes_copy(x);
+  // this one throws an error.
+  // println!("trying to use s: {}", s1);
+  println!("trying to use x: {}", x1);
+
+  // you can get ownership back if a variable is returned.
+  let s2 = String::from("This is another string");
+  let s2 = returns_ownership(s2);
+  println!("Using s2: {}", s2);
+
+  // but this is annoying, so we use references.
+  let s3 = String::from("hello");
+  println!("len: {}", get_len(&s3));
+
+  // when you want to alter something you're borrowing, you have to
+  // specify that, a alot.
+  let mut q = String::from("What is the meaning of life");
+  add_question_mark(&mut q);
+  println!("q: {}", q);
+  // There can only be one mutable ref to a varable in each scope...
+  // but this is fine;
+  add_question_mark(&mut q);
+  println!("q: {}", q);
+}
+
+fn get_len(s: &String) -> usize {
+  s.len()
+}
+
+fn add_question_mark(s: &mut String) {
+  s.push_str("?");
+}
+
+fn takes_ownership(s: String) {
+  println!("s: {}", s);
+}
+
+fn makes_copy(x: i32) {
+  println!("x: {}", x);
+}
+
+fn returns_ownership(s: String) -> String {
+  s
 }
