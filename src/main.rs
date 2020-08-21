@@ -6,7 +6,8 @@
 // mod fibonacci;
 // mod day3; // ownership
 // mod day4_slices;
-mod day5_structs;
+// mod day5_structs;
+mod day6_enums;
 
 fn main() {
     // day0::run();
@@ -16,5 +17,6 @@ fn main() {
     // fibonacci::run();
     // day3::run();
     // day4_slices::run();
-    day5_structs::run();
+    // day5_structs::run();
+    day6_enums::run();
 }
