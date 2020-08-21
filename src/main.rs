@@ -7,7 +7,8 @@
 // mod day3; // ownership
 // mod day4_slices;
 // mod day5_structs;
-mod day6_enums;
+// mod day6_enums;
+mod day7_match;
 
 fn main() {
     // day0::run();
@@ -18,5 +19,6 @@ fn main() {
     // day3::run();
     // day4_slices::run();
     // day5_structs::run();
-    day6_enums::run();
+    // day6_enums::run();
+    day7_match::run();
 }
