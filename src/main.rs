@@ -9,7 +9,9 @@
 // mod day5_structs;
 // mod day6_enums;
 // mod day7_match;
-mod day8_vectors; 
+// mod day8_vectors;
+// mod day9_strings;
+mod day10_hashmaps;
 
 fn main() {
     // day0::run();
@@ -22,5 +24,7 @@ fn main() {
     // day5_structs::run();
     // day6_enums::run();
     // day7_match::run();
-    day8_vectors::run(); 
+    // day8_vectors::run();
+    // day9_strings::run();
+    day10_hashmaps::run();
 }
