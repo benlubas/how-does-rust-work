@@ -8,7 +8,8 @@
 // mod day4_slices;
 // mod day5_structs;
 // mod day6_enums;
-mod day7_match;
+// mod day7_match;
+mod day8_vectors; 
 
 fn main() {
     // day0::run();
@@ -20,5 +21,6 @@ fn main() {
     // day4_slices::run();
     // day5_structs::run();
     // day6_enums::run();
-    day7_match::run();
+    // day7_match::run();
+    day8_vectors::run(); 
 }
