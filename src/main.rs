@@ -11,7 +11,8 @@
 // mod day7_match;
 // mod day8_vectors;
 // mod day9_strings;
-mod day10_hashmaps;
+// mod day10_hashmaps;
+mod day11_errors;
 
 fn main() {
     // day0::run();
@@ -26,5 +27,6 @@ fn main() {
     // day7_match::run();
     // day8_vectors::run();
     // day9_strings::run();
-    day10_hashmaps::run();
+    // day10_hashmaps::run();
+    day11_errors::run();
 }
