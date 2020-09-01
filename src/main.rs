@@ -13,6 +13,7 @@
 // mod day9_strings;
 // mod day10_hashmaps;
 mod day11_errors;
+mod practice;
 mod stairs;
 
 fn main() {
@@ -30,5 +31,6 @@ fn main() {
     // day9_strings::run();
     // day10_hashmaps::run();
     // day11_errors::run();
-    stairs::run();
+    // stairs::run();
+    practice::run();
 }
