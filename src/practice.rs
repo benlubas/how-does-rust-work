@@ -49,7 +49,16 @@ pub fn run() {
   }
   //unfinished
   fn alphebetize_word(word: &String) -> String {
-    word.split("").collect(::<&str>).sort().join("")
+    // again, there have to be more elegant ways of doing this.
+    let mut letters = Vec::new();
+    for l in word.chars() {
+      letters.push(l);
+    }
+    letters.sort();
+    let mut s = String::new();
+    for l in letters {
+      s.push(l);
+    }
+    s
   }
-
 }
