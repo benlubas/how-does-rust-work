@@ -48,8 +48,13 @@ pub fn run() {
     doubled
   }
   //unfinished
-  fn alphebetize_word(word: &String) -> String {
-    word.split("").collect(::<&str>).sort().join("")
-  }
+  // fn alphebetize_word(word: &String) -> &str {
+  //   let mut vec = word.split("").collect::<Vec<&str>>();
+  //   vec.sort();
+  //   // this code is really annoying. I don't understand Rust ownership well enough to
+  //   // get it to work, :( 
+  //   vec.join("").trim()
+  // }
+  // alphebetize_word(&String::from("this is a string"));
 
 }

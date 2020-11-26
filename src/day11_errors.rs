@@ -7,7 +7,7 @@ use std::io::Read;
 pub fn run() {
   // there are two types of errors in Rust, recoverable and
   // unrecoverable. Recoverable come in the form of a Result<T, E>
-  // which unrecoverable just call the panik! macro and stop
+  // While unrecoverable just call the panik! macro and stop
   // execution.
 
   // panic!("Message");
