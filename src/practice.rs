@@ -19,7 +19,7 @@ pub fn run() {
     }
     total
   }
-  // return true if last dig of a * last big of be = last dig of c
+  // return true if last dig of a * last dig of b = last dig of c
   fn last_dig(a: i32, b: i32, c: i32) -> bool {
     // there has to be a cleaner way to do this.
     let a = format!("{}", a).chars().last().unwrap();
@@ -47,14 +47,11 @@ pub fn run() {
     }
     doubled
   }
-  //unfinished
-  // fn alphebetize_word(word: &String) -> &str {
-  //   let mut vec = word.split("").collect::<Vec<&str>>();
-  //   vec.sort();
-  //   // this code is really annoying. I don't understand Rust ownership well enough to
-  //   // get it to work, :( 
-  //   vec.join("").trim()
-  // }
-  // alphebetize_word(&String::from("this is a string"));
+  fn alphebetize_word(word: &String) -> String {
+    let mut vec = word.split("").collect::<Vec<&str>>();
+    vec.sort(); 
+    String::from(vec.join("").trim())
+  }
+  println!("{}", alphebetize_word(&String::from("hello there buddy")));
 
 }

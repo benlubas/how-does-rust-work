@@ -28,7 +28,7 @@ pub fn run() {
     },
   };
 
-  // this is kinda of a mess tho, there are other methods that let you clean this
+  // this is kind of a mess tho, there are other methods that let you clean this
   // up a bit, as match statements can be a bit verbose and hard to read;
 
   //lets say we just want to open the file or panic. we can write
