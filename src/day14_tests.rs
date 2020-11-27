@@ -47,4 +47,28 @@ fn rest_panic() {
 // cargo test -- --show-output 
 // to see the printed output from a test. 
 
-//
+// you can pass names of tests to run them one at a time. 
+// cargo test test_rest 
+
+// or you can pass partial names and everything that matches will run. 
+// cargo test rest
+// will run test_rest and rest_panic 
+
+#[test]
+#[ignore]
+fn test_last () {
+  assert_eq!(last(&vec![1, 2, 3, 4, 5, 7, 8]), 8);
+}
+
+// you can ignore tests, they won't run when run cargo test 
+// cargo test -- --ignored 
+// will run all the ignored tests 
+
+
+
+
+
+
+
+
+
