@@ -33,7 +33,7 @@ pub fn run() {
   let lname: &str = "Lubas"; 
   let weighted_gpa: f64 = 4.911; 
   // you can also annotate the type of numbers with a suffix. 
-  // I personally think that's uglay as fuck; 
+  // I personally think that's ugly as fuck; 
   let unweighted_gpa = 3.9f32;
 
   // two different types of string. Not entirely sure 

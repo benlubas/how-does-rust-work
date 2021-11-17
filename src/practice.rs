@@ -47,7 +47,6 @@ pub fn run() {
     }
     doubled
   }
-  //unfinished
   fn alphebetize_word(word: &String) -> String {
     // again, there have to be more elegant ways of doing this.
     let mut letters = Vec::new();

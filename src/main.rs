@@ -16,6 +16,7 @@ mod day11_errors;
 mod practice;
 mod stairs;
 
+
 fn main() {
     // day0::run();
     // day1::run();
@@ -32,5 +33,7 @@ fn main() {
     // day10_hashmaps::run();
     // day11_errors::run();
     // stairs::run();
-    practice::run();
+    // practice::run();
+
 }
+
